@@ -83,8 +83,6 @@ Use code with caution.
 
 Bash
 cfdisk /dev/sda  # Replace sda with your drive
-# (Use the UI to create EFI, swap, and root partitions as described earlier)
-Use code with caution.
 
 4. Formatting:
 
@@ -180,10 +178,14 @@ Use code with caution.
 Post-Installation (After Reboot):
 
 Connect to Wi-Fi using NetworkManager.
-Install your desired desktop environment (e.g., sudo pacman -S plasma-desktop) and a display manager if not already chosen during base install.
+Install desired desktop environment (e.g., sudo pacman -S plasma-desktop) and a display manager if not already chosen during base install.
 Key Improvements from Previous Attempts:
 
 Network Focus: Wi-Fi connection is established early in the process.
 Concise Commands: Streamlined for readability and ease of use.
 Essential Packages Only: Focus on core components to avoid conflicts.
 Post-Install Reminder: Guides to complete the setup after reboot.
+
+references: https://youtu.be/68z11VAYMS8?si=RdaTKJVFR-wjqjPA
+            https://wiki.archlinux.org/title/Installation_guide
+            https://wiki.archlinux.org/title/iwd#iwctl
