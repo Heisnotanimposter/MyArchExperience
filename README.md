@@ -83,8 +83,6 @@ station <device_name> connect <SSID>  # Enter password if needed
 
 Bash
 cfdisk /dev/sda  # Replace sda with your drive
-# (Use the UI to create EFI, swap, and root partitions as described earlier)
-Use code with caution.
 
 4. Formatting:
 
