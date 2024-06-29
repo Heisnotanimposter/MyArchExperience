@@ -77,14 +77,13 @@ device list
 station <device_name> scan
 station <device_name> get-networks
 station <device_name> connect <SSID>  # Enter password if needed
-Use code with caution.
+
 
 3. Partitioning (cfdisk):
 
 Bash
 cfdisk /dev/sda  # Replace sda with your drive
-# (Use the UI to create EFI, swap, and root partitions as described earlier)
-Use code with caution.
+
 
 4. Formatting:
 
@@ -92,7 +91,6 @@ Bash
 mkfs.fat -F32 /dev/sda1  # EFI System Partition (ESP)
 mkswap /dev/sda2          # Swap
 mkfs.ext4 /dev/sda3        # Root (/)
-Use code with caution.
 
 5. Mounting:
 
@@ -101,25 +99,22 @@ mount /dev/sda3 /mnt
 mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 swapon /dev/sda2
-Use code with caution.
+
 
 6. Installation (Base + Essentials):
 
 Bash
 pacstrap /mnt base linux linux-firmware intel-ucode sof-firmware base-devel sudo grub efibootmgr nano networkmanager
-Use code with caution.
 
 7. Generate fstab:
 
 Bash
 genfstab -U /mnt >> /mnt/etc/fstab
-Use code with caution.
 
 8. Chroot (Enter the New System):
 
 Bash
 arch-chroot /mnt
-Use code with caution.
 
 9. Time Zone & Hardware Clock:
 
@@ -134,13 +129,11 @@ Bash
 nano /etc/locale.gen   # Uncomment en_US.UTF-8 UTF-8 and others as needed
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf  # Or your chosen locale
-Use code with caution.
 
 11. Hostname:
 
 Bash
 echo "myhostname" > /etc/hostname
-Use code with caution.
 
 12. Root Password & User Account:
 
@@ -148,26 +141,22 @@ Bash
 passwd
 useradd -m -G wheel -s /bin/bash <your_username>
 passwd <your_username>
-Use code with caution.
 
 13. Enable sudo for User:
 
 Bash
 EDITOR=nano visudo  # Uncomment line for '%wheel ALL=(ALL) ALL'
-Use code with caution.
 
 14. NetworkManager:
 
 Bash
 systemctl enable NetworkManager
-Use code with caution.
 
 15. Bootloader (Grub):
 
 Bash
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB # If UEFI
 grub-mkconfig -o /boot/grub/grub.cfg
-Use code with caution.
 
 16. Exit & Reboot:
 
@@ -175,7 +164,6 @@ Bash
 exit
 umount -R /mnt
 reboot
-Use code with caution.
 
 Post-Installation (After Reboot):
 
