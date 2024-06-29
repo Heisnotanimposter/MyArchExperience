@@ -186,6 +186,8 @@ Concise Commands: Streamlined for readability and ease of use.
 Essential Packages Only: Focus on core components to avoid conflicts.
 Post-Install Reminder: Guides to complete the setup after reboot.
 
-references: https://youtu.be/68z11VAYMS8?si=RdaTKJVFR-wjqjPA
-            https://wiki.archlinux.org/title/Installation_guide
-            https://wiki.archlinux.org/title/iwd#iwctl
+references: 
+https://youtu.be/68z11VAYMS8?si=RdaTKJVFR-wjqjPA
+https://wiki.archlinux.org/title/Installation_guide
+https://wiki.archlinux.org/title/iwd#iwctl
+https://youtu.be/3zqITuprlL8?si=vCnjLmzGcFbhV9-B
