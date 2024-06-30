@@ -5,7 +5,7 @@ I relize that, the hardbooting, hard installing Arch Linux , were very meaningfu
 However, nonetheless the benefits of the full-controlling the Linux system, I faced a lot of problems of the 'not supported' or 'less- maintained' pkgs on the arch system. These  restrictions are not joking. It is very stressful to control it.
 
 So, the conclusion is, I give up to change my main OS system to Arch Linux.
-We may strongly agree with the well maden OS, like windows and MacOs, Android, etc, they are just have the moat.
+We may can strongly agree with the well maden OS, like windows and MacOs, Android, etc, they are just have the moat.
 
 If you have interest in Installing ArchLinux in hardInstalling, Please reference this md file.
 Thank you.
@@ -14,12 +14,16 @@ Thank you.
 
 ## Initial Installation
 
-* **Audio Woes:**
-    - The system failed to detect any sound output devices.
-    - Fixed by resolving conflicts between PipeWire and PulseAudio, reinstalling PulseAudio, and loading the correct ALSA module (`snd_hda_intel`).
-* **Application-Specific Sound:**
-    - Chrome initially didn't play any sound.
-    - Resolved by restarting Chrome.
+* **iwctl**
+$ iwctl
+help
+device list
+station '' scan
+station '' get-networks
+station '' connect SSID
+* ****
+
+## After the Installation
 
 ## Remote Desktop Challenges (AnyDesk)
 
