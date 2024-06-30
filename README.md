@@ -1,6 +1,16 @@
 # MyArchLinuxExperience
 
-This README documents my experience installing and setting up Arch Linux, along with the challenges I faced and how I resolved them with the help of a knowledgeable AI assistant.
+Hello, This readme file is about my challenge using Arch Linux for main Operating System.
+I relize that, the hardbooting, hard installing Arch Linux , were very meaningful when you need to study the Linux system.
+However, nonetheless the benefits of the full-controlling the Linux system, I faced a lot of problems of the 'not supported' or 'less- maintained' pkgs on the arch system. These  restrictions are not joking. It is very stressful to control it.
+
+So, the conclusion is, I give up to change my main OS system to Arch Linux.
+We may strongly agree with the well maden OS, like windows and MacOs, Android, etc, they are just have the moat.
+
+If you have interest in Installing ArchLinux in hardInstalling, Please reference this md file.
+Thank you.
+
+-Heisnotimposter
 
 ## Initial Installation
 
